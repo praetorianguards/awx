@@ -61,7 +61,7 @@
 
 - name: Get OS info for sdb
   shell: |
-    docker info | grep 'Operating System'
+    hostnamectl | grep 'Operating System'
   register: os_info
   changed_when: false
 
